@@ -1,0 +1,64 @@
+.layout {
+  min-height: 100vh;
+  background: #f7fafc;
+}
+
+.navbar {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.brand-icon {
+  font-size: 32px;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-email {
+  color: #718096;
+  font-size: 14px;
+}
+
+.btn-signout {
+  padding: 8px 16px;
+  background: #e2e8f0;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #4a5568;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-signout:hover {
+  background: #cbd5e0;
+}
+
+.main-content {
+  min-height: calc(100vh - 72px);
+}
