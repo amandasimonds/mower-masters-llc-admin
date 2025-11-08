@@ -43,18 +43,24 @@ A React-based customer management system for Mower Masters LLC, built with Fireb
 
 ### 2. Configure Firebase
 
-Edit `src/firebase/config.ts` and replace the config with your values:
+Create a `.env` file in the root directory (copy from `.env.example`):
 
-```typescript
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
-};
+```bash
+cp .env.example .env
 ```
+
+Then edit `.env` and add your Firebase credentials:
+
+```env
+FIREBASE_API_KEY=AIzaSy...
+FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
+FIREBASE_PROJECT_ID=your-project-id
+FIREBASE_STORAGE_BUCKET=your-project.appspot.com
+FIREBASE_MESSAGING_SENDER_ID=123456789
+FIREBASE_APP_ID=1:123456789:web:abcdef
+```
+
+**Important:** Never commit the `.env` file to Git! It's already in `.gitignore`.
 
 ### 3. Install Dependencies
 
